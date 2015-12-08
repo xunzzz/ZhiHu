@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_news_item"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+
+    <RelativeLayout
+        android:id="@+id/item_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background_selector_light">
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:focusableInTouchMode="false"
+            android:text="今日热闻"
+            android:textColor="@color/light_news_topic"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/title_RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_topic"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iv_title"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/iv_title"
+                android:text="如何看待当下这种越来越普遍的“沉默”人格？"
+                android:textColor="@color/dark_news_item"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
